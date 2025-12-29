@@ -51,7 +51,7 @@ javascript-mini-project/
 ---
 ## 🌐 Live Demo
 
-👉 **Live Preview:** 
+👉 **Live Preview:** https://lishaanthig.github.io/Todolist/index.html
 
 ---
 
