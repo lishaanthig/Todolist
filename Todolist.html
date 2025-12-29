@@ -1,59 +1,74 @@
-<html>
-    <head>
-        <title>STUDENT FORM</title>
-    </head>
-    <body>
-        <table border="1">
-        <tr>
-            <td>Name</td><td><input type="name" placeholder="name"></td>
-            
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        </tr>
-        <tr>
-            <td>age</td><td><input type="number" placeholder="age"></td>
-            
-        </tr> 
-        <tr>
-           <td>Gender</td>
+<div class="container">
+    <h2>Student Registration Form</h2>
 
-           <td>
-            <input type="radio" name="gender" value="Male"> Male
-         
+    <form id="studentForm">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" id="name" placeholder="Enter name" required>
+        </div>
 
-        
-         <input type="radio" name="gender" value="Female"> Female
-         
-        </td>
-        </tr>
-        <tr>
-            <td>Course</td><td><select>
-                <option> Artificial Intelligence</option>
+        <div class="form-group">
+            <label>Age</label>
+            <input type="number" id="age" placeholder="Enter age" required>
+        </div>
+
+        <div class="form-group">
+            <label>Gender</label>
+            <div class="radio-group">
+                <label><input type="radio" name="gender" value="Male" required> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Course</label>
+            <select id="course" required>
+                <option value="">Select course</option>
+                <option>Artificial Intelligence</option>
                 <option>Full Stack</option>
                 <option>Web Development</option>
-                <option>python FullStack</option>
-                <option>Java FullStack</option>
+                <option>Python Full Stack</option>
+                <option>Java Full Stack</option>
                 <option>Ethical Hacking</option>
-            </select></td>
-        </tr>
-        <tr>
-            <td>E-mail</td><td><input type="email" placeholder="your@gmail.com"></td>
-        </tr>
-        <tr>
-         <td colspan="2" align="center">
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="email" placeholder="your@gmail.com" required>
+        </div>
+
         <button type="submit">Save</button>
-        </td>
-         </tr>
-        
+    </form>
+</div>
+
+<div class="table-container">
+    <h2>Student List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Course</th>
+                <th>Gender</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="studentTable"></tbody>
     </table>
-    <table border="7">
-        <tr>
-            <td >Name</td>
-            <td>age</td>
-            <td>Course</td>
-            <td>Gender</td>
-            <td>Email</td>
-            <td>Action</td>
-        </tr>
-    </table>
-    </body>
+</div>
+
+<script src="script.js"></script>
+</body>
 </html>
+
