@@ -1,4 +1,4 @@
-# JavaScript Mini Project
+# JavaScript Mini Project(Student Registration Form)
 
 A simple JavaScript-based project created to practice **DOM manipulation** and **basic frontend logic**.  
 This project demonstrates my interest in **JavaScript development** and hands-on learning for internship preparation.
